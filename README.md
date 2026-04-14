@@ -1,6 +1,6 @@
 # Trade Game
 
-两国多部门贸易政策动态博弈实验包。项目已从原仓库中抽离，包含 `trade_game` 运行代码和最小 CN/US 2017 参数数据，可直接运行梯度博弈、LLM 博弈和 warmup 参数搜索。
+两国多部门贸易政策动态博弈实验包。项目已从原仓库中抽离，包含 `trade_game` 运行代码和 CN/US 2017、2018 参数数据，可直接运行梯度博弈、LLM 博弈和 warmup 参数搜索。
 
 ## 环境安装
 
@@ -18,8 +18,12 @@ pip install -r requirements.txt
 
 ```text
 trade_game/io-final/CN2017
+trade_game/io-final/CN2018
 trade_game/io-final/US2017
+trade_game/io-final/US2018
 ```
+
+包内还保留了对应的 5-sector normalized Excel 原始表和参数说明 Markdown，便于追溯参数来源。
 
 `trade_game.params.load_io_params()` 默认读取包内数据。若要使用外部数据目录，可设置：
 

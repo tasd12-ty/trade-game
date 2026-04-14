@@ -38,14 +38,16 @@ rounds = 10
 
 ## 数据说明
 
-包内只带最小运行数据：
+包内带 CN/US 的 2017、2018 参数数据：
 
 ```text
 trade_game/io-final/CN2017
+trade_game/io-final/CN2018
 trade_game/io-final/US2017
+trade_game/io-final/US2018
 ```
 
-每个国家目录包含运行所需的 `alpha_ij`, `gamma_ij`, `rho_ij`, `beta_j`, `A_i`, `E_j`, `gamma_cj`, `rho_cj`, `import_cost` 和 `metadata`。如需扩展到其它年份，按同样文件名结构添加目录即可。
+每个国家目录包含该年份的 CSV 参数、价格/出口辅助表、`factor_params.csv` 和 `metadata.json`。包内还保留对应的 5-sector normalized Excel 原始表与参数说明 Markdown，便于追溯参数来源。如需扩展到其它年份，按同样文件名结构添加目录即可。
 
 ## 运行命令
 

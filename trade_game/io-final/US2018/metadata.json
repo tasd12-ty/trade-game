@@ -1,0 +1,29 @@
+{
+  "country": "US",
+  "year": 2018,
+  "source_files": {
+    "ratio_params_from": "io_excel/USA2018_5sector_USD.xlsx",
+    "quantity_params_from": "io-final/USA2018_5sector_normalized.xlsx"
+  },
+  "sectors": [
+    "A01",
+    "RUP",
+    "RMID",
+    "ELEC_CIT",
+    "TEQ"
+  ],
+  "raw_sector_codes": [
+    "A01",
+    "RUP",
+    "RMID",
+    "CIT",
+    "TEQ"
+  ],
+  "capital_factor_price": 0.0291,
+  "n_sectors": 5,
+  "methodology": {
+    "ratio_params": "alpha_ij, theta_ij, beta_j, theta_cj — computed from pre-normalization USD data; gamma_ij, gamma_cj — inverted from theta and quantities via CES formula with rho=0.5",
+    "quantity_params": "factor_params, ExportValue_j, E_j — computed from min-max normalized data",
+    "exogenous": "P_j=1, P_j_O=1, A_i=1, rho=0.5 (sigma=2.0)"
+  }
+}

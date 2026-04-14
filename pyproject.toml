@@ -21,4 +21,4 @@ packages = ["trade_game", "trade_game.llm", "trade_game.runtime"]
 include-package-data = true
 
 [tool.setuptools.package-data]
-trade_game = ["io-final/**/*.csv", "io-final/**/*.json"]
+trade_game = ["io-final/**/*.csv", "io-final/**/*.json", "io-final/**/*.xlsx", "io-final/**/*.md"]
